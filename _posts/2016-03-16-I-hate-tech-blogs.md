@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Hello...blog world"
+title: "I-hate-tech-blogs"
 date: 2016-03-16
 ---
-
-# I-hate-tech-blogs
 
 My first blog post.
 In this blog I will be choosing a clojure function a day to use, talk about and generally discuss. 
@@ -90,9 +88,6 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
 
 
  ******************************************************
- :TODO
 
- * Re-work 3+ collections
- * Why do they use reduce in Single collection
  
      
