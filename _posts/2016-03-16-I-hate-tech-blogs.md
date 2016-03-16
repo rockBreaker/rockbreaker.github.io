@@ -61,7 +61,7 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
 
 ### [source-code](https://github.com/clojure/clojure/blob/clojure-1.7.0/src/clj/clojure/core.clj#L6607)
 
- 
+ Some text
 
 ````
 (defn mapv
