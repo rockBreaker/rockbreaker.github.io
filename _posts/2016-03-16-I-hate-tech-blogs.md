@@ -3,14 +3,14 @@
 My first blog post.
 In this blog I will be choosing a clojure function a day to use, talk about and generally discuss. 
 
-
+***WARNING MY SPELLING IS WORSE THAN MY CLOJURE***
 
 ******************************************************
 #There's a function for that:
 
 ###First Post -  [mapv](https://clojuredocs.org/clojure.core/mapv).
 
-Simpley put, it's map but instead of returning a *lazy-sequence* it returns a *evaluated* vector. 
+Simply put, it's map but instead of returning a *lazy-sequence* it returns a *evaluated* vector. 
 
 ###Examples
 
