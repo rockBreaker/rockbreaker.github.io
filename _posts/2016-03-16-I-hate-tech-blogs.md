@@ -77,7 +77,7 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
      (into [] (map f c1 c2 c3)))
   ([f c1 c2 c3 & colls]
      (into [] (apply map f c1 c2 c3 colls))))
-````
+     ````
 
  
      
