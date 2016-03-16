@@ -6,6 +6,7 @@ In this blog I will be choosing a clojure function a day to use, talk about and 
 ***WARNING MY SPELLING IS WORSE THAN MY CLOJURE***
 
 ******************************************************
+
 # There's a function for that:
 
 ### First Post -  [mapv](https://clojuredocs.org/clojure.core/mapv).
@@ -57,7 +58,7 @@ I think they explicitly write out the 2 and 3 arity versions for efficiency? (ch
 
 This is the base case for mapv'ing over more than 3 collections. The reason its apply map function over the collections and &coll, is because under the hood they use & colls for more than 3 collections called with mapv. [re-work this bit. Talking about & coll is a list/seq of things.] 
 
-[source-code](https://github.com/clojure/clojure/blob/clojure-1.7.0/src/clj/clojure/core.clj#L6607)
+### [source-code](https://github.com/clojure/clojure/blob/clojure-1.7.0/src/clj/clojure/core.clj#L6607)
 
 ````
 (defn mapv
@@ -77,7 +78,8 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
      (into [] (map f c1 c2 c3)))
   ([f c1 c2 c3 & colls]
      (into [] (apply map f c1 c2 c3 colls))))
-     ````
+````
+
 
  
      
