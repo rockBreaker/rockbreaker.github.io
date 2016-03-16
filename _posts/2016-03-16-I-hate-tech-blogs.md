@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Hello...blog world"
+date: 2016-03-16
+---
+
 # I-hate-tech-blogs
 
 My first blog post.
