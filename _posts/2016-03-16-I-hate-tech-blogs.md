@@ -14,6 +14,7 @@ In this blog I will be choosing a clojure function a day to use, talk about and 
 Simply put, it's map but instead of returning a *lazy-sequence* it returns a *evaluated* vector. 
 
 ###Examples
+ 
 
 ````
 (mapv inc [1 2 3])
@@ -60,6 +61,7 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
 
 ### [source-code](https://github.com/clojure/clojure/blob/clojure-1.7.0/src/clj/clojure/core.clj#L6607)
 
+ 
 ````
 (defn mapv
   "Returns a vector consisting of the result of applying f to the
