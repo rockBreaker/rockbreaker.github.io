@@ -33,7 +33,7 @@ Short answer, it saves you time.
 
 You can just code `(into [] (map inc [1 2 3]))`
 
-But mapv is a nice _shorthand_ [re-work this bit.] for doing the above.
+But mapv is a nice _shorthand_  for doing the above.
 
 Why do you want to return it as a vector?
 I have no idea, thats your design choice. 
@@ -45,19 +45,18 @@ I have no idea, thats your design choice.
 * Single collection
   * uses reduce and transient vectors.   
 
-I think they use transient vectors as its more efficent to create a transient vector and change it then create a new vector. (so essentially an optimization).
-[TODO- find out why they use reduce]
+I think they use transient vectors as its more efficent to create a transient vector and change it then create a new vector.
  
 * 2-3    collections
   * uses map function coll-1 coll-2 coll-3 into a vector
 
-I think they explicitly write out the 2 and 3 arity versions for efficiency? (check this is an optimization). 
+I think they explicitly write out the 2 and 3 arity versions for efficiency? . 
 
 
 * 3+     collections
   * uses  apply map function coll-1 coll-2 coll-3 &colls into a vector
 
-This is the base case for mapv'ing over more than 3 collections. The reason its apply map function over the collections and &coll, is because under the hood they use & colls for more than 3 collections called with mapv. [re-work this bit. Talking about & coll is a list/seq of things.] 
+This is the base case for mapv'ing over more than 3 collections. The reason its apply map function over the collections and &coll, is because under the hood they use & colls for more than 3 collections called with mapv. 
 
 ### [source-code](https://github.com/clojure/clojure/blob/clojure-1.7.0/src/clj/clojure/core.clj#L6607)
 
@@ -84,5 +83,10 @@ This is the base case for mapv'ing over more than 3 collections. The reason its 
 ````
 
 
+ ******************************************************
+ :TODO
+
+ * Re-work 3+ collections
+ * Why do they use reduce in Single collection
  
      
