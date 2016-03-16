@@ -6,9 +6,9 @@ In this blog I will be choosing a clojure function a day to use, talk about and 
 ***WARNING MY SPELLING IS WORSE THAN MY CLOJURE***
 
 ******************************************************
-#There's a function for that:
+# There's a function for that:
 
-###First Post -  [mapv](https://clojuredocs.org/clojure.core/mapv).
+### First Post -  [mapv](https://clojuredocs.org/clojure.core/mapv).
 
 Simply put, it's map but instead of returning a *lazy-sequence* it returns a *evaluated* vector. 
 
@@ -26,7 +26,7 @@ Simply put, it's map but instead of returning a *lazy-sequence* it returns a *ev
 => (3 5 7)
 ````
 
-###So why use mapv?
+### So why use mapv?
 Short answer, it saves you time. 
 
 You can just code `(into [] (map inc [1 2 3]))`
@@ -38,7 +38,7 @@ I have no idea, thats your design choice.
 
 
 
-###Under the hood:
+### Under the hood:
 
 * Single collection
   * uses reduce and transient vectors.   
